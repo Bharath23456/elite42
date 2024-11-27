@@ -4,16 +4,18 @@
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   display: flex;
-  background-color: gray;
+  background-color: silver;
   padding: 10px;
   justify-content: flex-end;
 }
-ul li a {
+
+li a {
   text-decoration: none;
   padding: 40px;
+  text-transform: capitalize;
 }
-ul li a:hover {
-  color: red;
+li a:hover {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
