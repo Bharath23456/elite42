@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style:none;
+
+}
+ ul.parent{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color:grey;
+    li{
+        position: relative;
+        a{
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #fff;
+        &:hover{
+            color:red;
+        }
+        }
+        ul{
+            position: absolute;
+            display: none;
+            background-color: grey;
+            padding: 5px;
+            top: 25px;
+        }
+        &:hover{
+            ul{
+            display: block;
+        }  
+    }
+}}
+.header{
+    padding: 10px;
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    
+    
+}
+.content{
+    padding: 10px;
+    .products{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 10px;
+        flex-wrap: wrap;
+        li{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color:blue;
+            button{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: antiquewhite;
+                height: 20px;
+                &:hover{
+                    color: maroon;
+                    cursor: pointer;
+                }
+            }
+            img{
+                position: absolute;
+                width: 50%;
+                height: 50%;
+                bottom: 50px;
+                left: 50px;
+            }
+            p{
+                text-align: center;
+                color: black;
+                font: bold;
+            }
+        }
+        
+
+    }
+}
