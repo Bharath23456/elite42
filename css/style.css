@@ -10,8 +10,8 @@ ul {
 ul.parent {
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
-  background-color: grey;
+  padding: 5px;
+  background-color: red;
 }
 ul.parent li {
   position: relative;
@@ -24,14 +24,14 @@ ul.parent li a {
   color: #fff;
 }
 ul.parent li a:hover {
-  color: red;
+  color: green;
 }
 ul.parent li ul {
   position: absolute;
   display: none;
   background-color: grey;
   padding: 5px;
-  top: 26px;
+  top: 25px;
 }
 ul.parent li:hover ul {
   display: block;
